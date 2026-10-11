@@ -1,0 +1,160 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/dungeon/room.gd" id="1_room_script"]
+[ext_resource type="Texture2D" path="res://assets/tilesets/floor_tile.png" id="2_floor_tex"]
+[ext_resource type="Texture2D" path="res://assets/tilesets/wall_tile.png" id="3_wall_tex"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/door.tscn" id="4_door_scene"]
+[ext_resource type="Texture2D" path="res://assets/sprites/props/torch.png" id="5_torch_tex"]
+
+[sub_resource type="RectangleShape2D" id="Rect_Wall_Top"]
+size = Vector2(380, 24)
+
+[sub_resource type="RectangleShape2D" id="Rect_Wall_Bottom"]
+size = Vector2(380, 24)
+
+[sub_resource type="RectangleShape2D" id="Rect_Wall_Side"]
+size = Vector2(24, 100)
+
+[sub_resource type="RectangleShape2D" id="Rect_Trigger"]
+size = Vector2(300, 160)
+
+[node name="CombatRoom" type="Node2D"]
+script = ExtResource("1_room_script")
+room_id = "combat_arena_1"
+total_waves = 2
+
+[node name="Floor" type="TextureRect" parent="."]
+texture_repeat = 2
+offset_left = -180.0
+offset_top = -110.0
+offset_right = 180.0
+offset_bottom = 110.0
+texture = ExtResource("2_floor_tex")
+stretch_mode = 1
+
+[node name="Walls" type="StaticBody2D" parent="."]
+collision_mask = 0
+
+[node name="Col_Top" type="CollisionShape2D" parent="Walls"]
+position = Vector2(0, -122)
+shape = SubResource("Rect_Wall_Top")
+
+[node name="Visual_Top" type="TextureRect" parent="Walls"]
+texture_repeat = 2
+offset_left = -190.0
+offset_top = -134.0
+offset_right = 190.0
+offset_bottom = -110.0
+texture = ExtResource("3_wall_tex")
+stretch_mode = 1
+
+[node name="Col_Bottom" type="CollisionShape2D" parent="Walls"]
+position = Vector2(0, 122)
+shape = SubResource("Rect_Wall_Bottom")
+
+[node name="Visual_Bottom" type="TextureRect" parent="Walls"]
+texture_repeat = 2
+offset_left = -190.0
+offset_top = 110.0
+offset_right = 190.0
+offset_bottom = 134.0
+texture = ExtResource("3_wall_tex")
+stretch_mode = 1
+
+[node name="Col_Left_Top" type="CollisionShape2D" parent="Walls"]
+position = Vector2(-192, -60)
+shape = SubResource("Rect_Wall_Side")
+
+[node name="Visual_Left_Top" type="TextureRect" parent="Walls"]
+texture_repeat = 2
+offset_left = -204.0
+offset_top = -110.0
+offset_right = -180.0
+offset_bottom = -10.0
+texture = ExtResource("3_wall_tex")
+stretch_mode = 1
+
+[node name="Col_Left_Bottom" type="CollisionShape2D" parent="Walls"]
+position = Vector2(-192, 60)
+shape = SubResource("Rect_Wall_Side")
+
+[node name="Visual_Left_Bottom" type="TextureRect" parent="Walls"]
+texture_repeat = 2
+offset_left = -204.0
+offset_top = 10.0
+offset_right = -180.0
+offset_bottom = 110.0
+texture = ExtResource("3_wall_tex")
+stretch_mode = 1
+
+[node name="Col_Right_Top" type="CollisionShape2D" parent="Walls"]
+position = Vector2(192, -60)
+shape = SubResource("Rect_Wall_Side")
+
+[node name="Visual_Right_Top" type="TextureRect" parent="Walls"]
+texture_repeat = 2
+offset_left = 180.0
+offset_top = -110.0
+offset_right = 204.0
+offset_bottom = -10.0
+texture = ExtResource("3_wall_tex")
+stretch_mode = 1
+
+[node name="Col_Right_Bottom" type="CollisionShape2D" parent="Walls"]
+position = Vector2(192, 60)
+shape = SubResource("Rect_Wall_Side")
+
+[node name="Visual_Right_Bottom" type="TextureRect" parent="Walls"]
+texture_repeat = 2
+offset_left = 180.0
+offset_top = 10.0
+offset_right = 204.0
+offset_bottom = 110.0
+texture = ExtResource("3_wall_tex")
+stretch_mode = 1
+
+[node name="Doors" type="Node2D" parent="."]
+
+[node name="WestDoor" parent="Doors" instance=ExtResource("4_door_scene")]
+position = Vector2(-180, 0)
+rotation = 1.5708
+
+[node name="EastDoor" parent="Doors" instance=ExtResource("4_door_scene")]
+position = Vector2(180, 0)
+rotation = 1.5708
+
+[node name="Torches" type="Node2D" parent="."]
+
+[node name="Torch1" type="Sprite2D" parent="Torches"]
+position = Vector2(-120, -112)
+texture = ExtResource("5_torch_tex")
+
+[node name="Torch2" type="Sprite2D" parent="Torches"]
+position = Vector2(120, -112)
+texture = ExtResource("5_torch_tex")
+
+[node name="TriggerArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerArea"]
+shape = SubResource("Rect_Trigger")
+
+[node name="Spawners" type="Node2D" parent="."]
+
+[node name="Spawn1" type="Marker2D" parent="Spawners"]
+position = Vector2(-100, -50)
+
+[node name="Spawn2" type="Marker2D" parent="Spawners"]
+position = Vector2(100, -50)
+
+[node name="Spawn3" type="Marker2D" parent="Spawners"]
+position = Vector2(-100, 50)
+
+[node name="Spawn4" type="Marker2D" parent="Spawners"]
+position = Vector2(100, 50)
+
+[node name="RewardPoint" type="Marker2D" parent="."]
+position = Vector2(0, 0)
+
+[node name="Enemies" type="Node2D" parent="."]

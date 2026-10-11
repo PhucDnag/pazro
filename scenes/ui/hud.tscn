@@ -1,0 +1,169 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/hud.gd" id="1_hud_script"]
+[ext_resource type="Texture2D" path="res://assets/sprites/weapons/pistol.png" id="2_weap_icon"]
+[ext_resource type="PackedScene" path="res://scenes/ui/minimap.tscn" id="3_minimap_scene"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_Panel"]
+content_margin_left = 8.0
+content_margin_top = 6.0
+content_margin_right = 8.0
+content_margin_bottom = 6.0
+bg_color = Color(0.0941176, 0.0784314, 0.145098, 0.9)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.352941, 0.411765, 0.533333, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_HealthBg"]
+bg_color = Color(0.219608, 0.0901961, 0.121569, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.12, 0.05, 0.07, 1)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_HealthFill"]
+bg_color = Color(0.894118, 0.231373, 0.266667, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 0.45, 0.45, 0.6)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_EnergyBg"]
+bg_color = Color(0.0784314, 0.145098, 0.231373, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.04, 0.08, 0.12, 1)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBox_EnergyFill"]
+bg_color = Color(0.172549, 0.709804, 0.960784, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.45, 0.85, 1, 0.6)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+anti_aliasing = false
+
+[node name="HUD" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1_hud_script")
+
+[node name="Margin" type="MarginContainer" parent="."]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 260.0
+offset_bottom = 90.0
+
+[node name="PanelContainer" type="PanelContainer" parent="Margin"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBox_Panel")
+
+[node name="VBox" type="VBoxContainer" parent="Margin/PanelContainer"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="HealthRow" type="HBoxContainer" parent="Margin/PanelContainer/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="HealthBar" type="ProgressBar" parent="Margin/PanelContainer/VBox/HealthRow"]
+custom_minimum_size = Vector2(110, 9)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/background = SubResource("StyleBox_HealthBg")
+theme_override_styles/fill = SubResource("StyleBox_HealthFill")
+max_value = 100.0
+step = 1.0
+value = 100.0
+show_percentage = false
+
+[node name="HealthLabel" type="Label" parent="Margin/PanelContainer/VBox/HealthRow"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.95, 0.98, 1)
+theme_override_font_sizes/font_size = 10
+text = "HP: 100 / 100"
+
+[node name="EnergyRow" type="HBoxContainer" parent="Margin/PanelContainer/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="EnergyBar" type="ProgressBar" parent="Margin/PanelContainer/VBox/EnergyRow"]
+custom_minimum_size = Vector2(110, 9)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/background = SubResource("StyleBox_EnergyBg")
+theme_override_styles/fill = SubResource("StyleBox_EnergyFill")
+max_value = 50.0
+step = 1.0
+value = 50.0
+show_percentage = false
+
+[node name="EnergyLabel" type="Label" parent="Margin/PanelContainer/VBox/EnergyRow"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.88, 1, 1)
+theme_override_font_sizes/font_size = 10
+text = "MP: 50 / 50"
+
+[node name="WeaponRow" type="HBoxContainer" parent="Margin/PanelContainer/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="WeaponIcon" type="TextureRect" parent="Margin/PanelContainer/VBox/WeaponRow"]
+custom_minimum_size = Vector2(20, 12)
+layout_mode = 2
+texture = ExtResource("2_weap_icon")
+stretch_mode = 5
+
+[node name="WeaponLabel" type="Label" parent="Margin/PanelContainer/VBox/WeaponRow"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.92, 0.84, 0.55, 1)
+theme_override_font_sizes/font_size = 10
+text = "Pistol [Q]"
+
+[node name="HintLabel" type="Label" parent="Margin/PanelContainer/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.61, 0.71, 1)
+theme_override_font_sizes/font_size = 8
+text = "[Chuột Trái] Bắn | [Q] Đổi súng | [E] Mở rương | [H/J] Test HP"
+
+[node name="MinimapMargin" type="MarginContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -84.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = 62.0
+grow_horizontal = 0
+
+[node name="Minimap" parent="MinimapMargin" instance=ExtResource("3_minimap_scene")]
+layout_mode = 2

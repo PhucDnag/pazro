@@ -1,0 +1,55 @@
+[gd_resource type="Resource" script_class="AudioCatalog" load_steps=25 format=3]
+[ext_resource type="Script" path="res://scripts/audio/audio_catalog.gd" id="1"]
+[ext_resource type="AudioStream" path="res://assets/audio/ui.wav" id="ui"]
+[ext_resource type="AudioStream" path="res://assets/audio/pistol.wav" id="pistol"]
+[ext_resource type="AudioStream" path="res://assets/audio/shotgun.wav" id="shotgun"]
+[ext_resource type="AudioStream" path="res://assets/audio/plasma_blaster.wav" id="plasma_blaster"]
+[ext_resource type="AudioStream" path="res://assets/audio/hit.wav" id="hit"]
+[ext_resource type="AudioStream" path="res://assets/audio/hurt.wav" id="hurt"]
+[ext_resource type="AudioStream" path="res://assets/audio/dash.wav" id="dash"]
+[ext_resource type="AudioStream" path="res://assets/audio/skill.wav" id="skill"]
+[ext_resource type="AudioStream" path="res://assets/audio/heal.wav" id="heal"]
+[ext_resource type="AudioStream" path="res://assets/audio/door.wav" id="door"]
+[ext_resource type="AudioStream" path="res://assets/audio/rune.wav" id="rune"]
+[ext_resource type="AudioStream" path="res://assets/audio/wrong.wav" id="wrong"]
+[ext_resource type="AudioStream" path="res://assets/audio/solve.wav" id="solve"]
+[ext_resource type="AudioStream" path="res://assets/audio/push.wav" id="push"]
+[ext_resource type="AudioStream" path="res://assets/audio/reward.wav" id="reward"]
+[ext_resource type="AudioStream" path="res://assets/audio/portal.wav" id="portal"]
+[ext_resource type="AudioStream" path="res://assets/audio/victory.wav" id="victory"]
+[ext_resource type="AudioStream" path="res://assets/audio/defeat.wav" id="defeat"]
+[ext_resource type="AudioStream" path="res://assets/audio/enemy_cast.wav" id="enemy_cast"]
+[ext_resource type="AudioStream" path="res://assets/audio/warning.wav" id="warning"]
+[ext_resource type="AudioStream" path="res://assets/audio/menu.wav" id="menu"]
+[ext_resource type="AudioStream" path="res://assets/audio/dungeon.wav" id="dungeon"]
+[ext_resource type="AudioStream" path="res://assets/audio/boss.wav" id="boss"]
+[resource]
+script = ExtResource("1")
+effects = {
+"ui": ExtResource("ui"),
+"pistol": ExtResource("pistol"),
+"shotgun": ExtResource("shotgun"),
+"plasma_blaster": ExtResource("plasma_blaster"),
+"hit": ExtResource("hit"),
+"hurt": ExtResource("hurt"),
+"dash": ExtResource("dash"),
+"skill": ExtResource("skill"),
+"heal": ExtResource("heal"),
+"door": ExtResource("door"),
+"rune": ExtResource("rune"),
+"wrong": ExtResource("wrong"),
+"solve": ExtResource("solve"),
+"push": ExtResource("push"),
+"reward": ExtResource("reward"),
+"portal": ExtResource("portal"),
+"victory": ExtResource("victory"),
+"defeat": ExtResource("defeat"),
+"enemy_cast": ExtResource("enemy_cast"),
+"warning": ExtResource("warning")
+}
+music = {
+"menu": ExtResource("menu"),
+"dungeon": ExtResource("dungeon"),
+"boss": ExtResource("boss")
+}
+

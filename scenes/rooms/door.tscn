@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/dungeon/door.gd" id="1_door_script"]
+[ext_resource type="Texture2D" path="res://assets/sprites/props/door_open.png" id="2_door_tex"]
+
+[sub_resource type="RectangleShape2D" id="Rect_Door"]
+size = Vector2(32, 20)
+
+[node name="Door" type="StaticBody2D"]
+collision_mask = 0
+script = ExtResource("1_door_script")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_door_tex")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("Rect_Door")
+disabled = true

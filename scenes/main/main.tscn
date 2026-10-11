@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/main/main.gd" id="1_main_script"]
+[ext_resource type="PackedScene" path="res://scenes/main/dungeon.tscn" id="2_dungeon_scene"]
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="3_player_scene"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="4_hud_scene"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_main_script")
+
+[node name="Dungeon" parent="." instance=ExtResource("2_dungeon_scene")]
+
+[node name="Projectiles" type="Node2D" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("3_player_scene")]
+
+[node name="HUD" parent="." instance=ExtResource("4_hud_scene")]

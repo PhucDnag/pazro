@@ -1,0 +1,30 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: 100 seeded layouts are connected
+PASS: Layouts vary between runs
+PASS: Starts in safe room of a multi-room dungeon
+PASS: Room transition completed
+PASS: Wrong rune resets sequence and summons guardian
+PASS: Repeated mistakes cannot flood room with guardians
+PASS: Puzzle solution still requires defeating guardian
+PASS: First seal granted once
+PASS: Room reward cannot be duplicated
+PASS: Block moves one grid cell
+PASS: Reset recovers a stuck puzzle
+PASS: Active trap damages player in danger lane
+PASS: Trap damages at most once per pulse
+PASS: Both pressure plates grant second seal
+PASS: Solved puzzle persists on revisit
+PASS: Treasure upgrades this run's weapons
+PASS: Treasure cannot be farmed by repeated interaction
+PASS: Upgrade leaves shared resources untouched
+PASS: Supply room heals
+PASS: Combat locks exits
+PASS: Cannot leave active combat
+PASS: Second enemy wave spawns
+PASS: Cleared combat opens exits
+PASS: Boss chamber spawns boss
+PASS: Portal generates next floor and resets seals
+PASS: Boss gate requires both seals on new floor
+PASS: Last boss portal completes adventure
+ADVENTURE: 0 failures

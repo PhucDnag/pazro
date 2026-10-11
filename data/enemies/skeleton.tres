@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/combat/enemy_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://data/skeleton_texture.tres" id="2_tex"]
+
+[resource]
+script = ExtResource("1_script")
+id = "skeleton"
+enemy_name = "Skeletor"
+sprite_texture = ExtResource("2_tex")
+max_health = 55
+speed = 75.0
+contact_damage = 14
+knockback_resistance = 0.3
+detection_range = 280.0
+is_ranged = false
+attack_range = 26.0
+attack_cooldown = 1.0
+score_reward = 80
+
+visual_scale = 0.06
+

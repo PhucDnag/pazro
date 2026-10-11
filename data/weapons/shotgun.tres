@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="WeaponData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/combat/weapon_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/sprites/weapons/shotgun.png" id="2_icon"]
+[ext_resource type="Texture2D" path="res://assets/sprites/projectiles/bullet_pellet.png" id="3_proj"]
+
+[resource]
+script = ExtResource("1_script")
+id = "shotgun"
+weapon_name = "Shotgun"
+icon = ExtResource("2_icon")
+damage = 8
+fire_rate = 1.5
+energy_cost = 3
+projectile_speed = 380.0
+projectile_lifetime = 1.0
+projectile_count = 5
+spread_degrees = 25.0
+recoil = 6.0
+projectile_texture = ExtResource("3_proj")
+projectile_scale = Vector2(1, 1)

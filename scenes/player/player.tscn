@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/player/player.gd" id="1_player_script"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player_hero.png" id="2_player_tex"]
+[ext_resource type="PackedScene" path="res://scenes/weapons/weapon.tscn" id="3_weapon_scene"]
+[ext_resource type="Script" path="res://scripts/combat/hurtbox_component.gd" id="4_hurtbox_comp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1"]
+radius = 6.0
+
+[sub_resource type="CircleShape2D" id="Circle_PlayerHurtbox"]
+radius = 8.0
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 5
+motion_mode = 1
+script = ExtResource("1_player_script")
+
+[node name="Visual" type="Sprite2D" parent="."]
+texture = ExtResource("2_player_tex")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("CircleShape2D_1")
+
+[node name="HurtboxComponent" type="Area2D" parent="."]
+collision_layer = 64
+collision_mask = 40
+script = ExtResource("4_hurtbox_comp")
+is_player_side = true
+invincibility_duration = 0.4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent"]
+position = Vector2(0, 2)
+shape = SubResource("Circle_PlayerHurtbox")
+
+[node name="WeaponPivot" type="Node2D" parent="."]
+
+[node name="WeaponSlot" type="Marker2D" parent="WeaponPivot"]
+position = Vector2(8, 0)
+
+[node name="Weapon" parent="WeaponPivot/WeaponSlot" instance=ExtResource("3_weapon_scene")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0
+drag_horizontal_enabled = false
+drag_vertical_enabled = false

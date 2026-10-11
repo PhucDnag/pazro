@@ -1,0 +1,41 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+
+==================================================
+  BAT DAU KIEM THU TU DONG MILESTONE 2 (PixelDungeon)
+==================================================
+
+[TEST 1] Kiem tra cac Resource WeaponData (.tres)...
+  PASS: Resource hop le: Pistol (Dmg: 12, Cost: 1, Bullets: 1).
+  PASS: Resource hop le: Shotgun (Dmg: 8, Cost: 3, Bullets: 5).
+  PASS: Resource hop le: Plasma Blaster (Dmg: 16, Cost: 2, Bullets: 1).
+
+[TEST 2] Kiem tra kho vu khi va co che doi sung (Switch Weapon phim Q)...
+[Main] Đã khởi tạo màn chơi PixelDungeon thành công!
+  PASS: Vu khi mac dinh khoi dau: Pistol.
+  PASS: switch_weapon() -> Chuyen sang Shotgun thanh cong.
+  PASS: switch_weapon() -> Chuyen sang Plasma Blaster thanh cong.
+  PASS: switch_weapon() -> Quay vong ve lai Pistol thanh cong.
+
+[TEST 3] Kiem tra co che ban sung va sinh dan (Projectiles)...
+[Main] Đã khởi tạo màn chơi PixelDungeon thành công!
+  PASS: Ban Pistol tao 1 vien dan bay hop le (Damage: 12, Speed: 450).
+  PASS: Cooldown ngan ban lien tiep thanh cong.
+  PASS: Ban Shotgun sinh chinh xac chum 5 vien dan toa ra.
+
+[TEST 4] Kiem tra tieu hao Mana va dong bo HUD Energy...
+[Main] Đã khởi tạo màn chơi PixelDungeon thành công!
+  PASS: HUD Energy ban dau khoi tao chinh xac: 50 / 50.
+  PASS: Ban Pistol -> Energy giam 1 (Player: 49, HUD: 49).
+  PASS: Ban Shotgun -> Energy giam 3 (Player: 46, HUD: 46).
+  PASS: HUD Weapon Label cap nhat chinh xac sang 'Shotgun [Q]'.
+
+[TEST 5] Kiem tra va cham dan va tuong (Projectile Wall Collision)...
+  PASS: Dan va cham tuong StaticBody2D va tu dong huy hop le (Queue Free).
+==================================================
+  KET QUA: TAT CA TEST CASES CUA MILESTONE 2 PASSED! (100%)
+==================================================
+
+[Main] Đã khởi tạo màn chơi PixelDungeon thành công!
+[Main] Đã khởi tạo màn chơi PixelDungeon thành công!
+[Main] Đã khởi tạo màn chơi PixelDungeon thành công!

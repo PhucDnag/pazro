@@ -1,0 +1,134 @@
+WorkerThreadPool: 16 threads, 4 max low-priority.
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+CORE API HASH: 2004498165
+EDITOR API HASH: 1696660745
+Loading resource: res://tests/test_audio.gd remapped: res://tests/test_audio.gd
+Completed load for: 'res://tests/test_audio.gd' remapped 'res://tests/test_audio.gd' at thread -1
+SceneTreeFTI: traversal method DEFAULT
+Loading resource: res://scripts/autoload/event_bus.gd remapped: res://scripts/autoload/event_bus.gd
+Completed load for: 'res://scripts/autoload/event_bus.gd' remapped 'res://scripts/autoload/event_bus.gd' at thread -1
+Loading resource: res://scripts/autoload/game_manager.gd remapped: res://scripts/autoload/game_manager.gd
+Completed load for: 'res://scripts/autoload/game_manager.gd' remapped 'res://scripts/autoload/game_manager.gd' at thread -1
+Loading resource: res://scripts/autoload/audio_manager.gd remapped: res://scripts/autoload/audio_manager.gd
+Completed load for: 'res://scripts/autoload/audio_manager.gd' remapped 'res://scripts/autoload/audio_manager.gd' at thread -1
+MbedTLS: Some X509 certificates could not be parsed (1 certificates skipped).
+Loaded system CA certificates
+Loading resource: res://data/audio/catalog.tres remapped: res://data/audio/catalog.tres
+Loading resource: res://assets/audio/ui.wav remapped: res://assets/audio/ui.wav
+Loading resource: res://.godot/imported/ui.wav-d54e8bc37b8ccee18240932350cecc18.sample remapped: res://.godot/imported/ui.wav-d54e8bc37b8ccee18240932350cecc18.sample
+Completed load for: 'res://assets/audio/ui.wav' remapped 'res://assets/audio/ui.wav' at thread -1
+Loading resource: res://assets/audio/pistol.wav remapped: res://assets/audio/pistol.wav
+Loading resource: res://.godot/imported/pistol.wav-ca66a085d3a5bea19f18b80619391498.sample remapped: res://.godot/imported/pistol.wav-ca66a085d3a5bea19f18b80619391498.sample
+Completed load for: 'res://assets/audio/pistol.wav' remapped 'res://assets/audio/pistol.wav' at thread -1
+Loading resource: res://assets/audio/shotgun.wav remapped: res://assets/audio/shotgun.wav
+Loading resource: res://.godot/imported/shotgun.wav-63c0fa10013ddd0169a67c8c51a04495.sample remapped: res://.godot/imported/shotgun.wav-63c0fa10013ddd0169a67c8c51a04495.sample
+Completed load for: 'res://assets/audio/shotgun.wav' remapped 'res://assets/audio/shotgun.wav' at thread -1
+Loading resource: res://assets/audio/plasma_blaster.wav remapped: res://assets/audio/plasma_blaster.wav
+Loading resource: res://.godot/imported/plasma_blaster.wav-3b9d6ff4601d079a60bfa300ec7837ac.sample remapped: res://.godot/imported/plasma_blaster.wav-3b9d6ff4601d079a60bfa300ec7837ac.sample
+Completed load for: 'res://assets/audio/plasma_blaster.wav' remapped 'res://assets/audio/plasma_blaster.wav' at thread -1
+Loading resource: res://assets/audio/hit.wav remapped: res://assets/audio/hit.wav
+Loading resource: res://.godot/imported/hit.wav-96dc477cdf4a42f381370dba6e3f75ce.sample remapped: res://.godot/imported/hit.wav-96dc477cdf4a42f381370dba6e3f75ce.sample
+Completed load for: 'res://assets/audio/hit.wav' remapped 'res://assets/audio/hit.wav' at thread -1
+Loading resource: res://assets/audio/hurt.wav remapped: res://assets/audio/hurt.wav
+Loading resource: res://.godot/imported/hurt.wav-e638edfaf88190ba3ffee0adc26b7375.sample remapped: res://.godot/imported/hurt.wav-e638edfaf88190ba3ffee0adc26b7375.sample
+Completed load for: 'res://assets/audio/hurt.wav' remapped 'res://assets/audio/hurt.wav' at thread -1
+Loading resource: res://assets/audio/dash.wav remapped: res://assets/audio/dash.wav
+Loading resource: res://.godot/imported/dash.wav-c732fa599cfe157dd4267b88c75a825a.sample remapped: res://.godot/imported/dash.wav-c732fa599cfe157dd4267b88c75a825a.sample
+Completed load for: 'res://assets/audio/dash.wav' remapped 'res://assets/audio/dash.wav' at thread -1
+Loading resource: res://assets/audio/skill.wav remapped: res://assets/audio/skill.wav
+Loading resource: res://.godot/imported/skill.wav-04af0d6b1fa7c8ecf283aa62c4f10d4d.sample remapped: res://.godot/imported/skill.wav-04af0d6b1fa7c8ecf283aa62c4f10d4d.sample
+Completed load for: 'res://assets/audio/skill.wav' remapped 'res://assets/audio/skill.wav' at thread -1
+Loading resource: res://assets/audio/heal.wav remapped: res://assets/audio/heal.wav
+Loading resource: res://.godot/imported/heal.wav-931ca7a754542f5b94f13b00622da730.sample remapped: res://.godot/imported/heal.wav-931ca7a754542f5b94f13b00622da730.sample
+Completed load for: 'res://assets/audio/heal.wav' remapped 'res://assets/audio/heal.wav' at thread -1
+Loading resource: res://assets/audio/door.wav remapped: res://assets/audio/door.wav
+Loading resource: res://.godot/imported/door.wav-44917a986749810eab0efbb8873b8ccb.sample remapped: res://.godot/imported/door.wav-44917a986749810eab0efbb8873b8ccb.sample
+Completed load for: 'res://assets/audio/door.wav' remapped 'res://assets/audio/door.wav' at thread -1
+Loading resource: res://assets/audio/rune.wav remapped: res://assets/audio/rune.wav
+Loading resource: res://.godot/imported/rune.wav-0e45c2de3222a396c4d8db07b1683f0a.sample remapped: res://.godot/imported/rune.wav-0e45c2de3222a396c4d8db07b1683f0a.sample
+Completed load for: 'res://assets/audio/rune.wav' remapped 'res://assets/audio/rune.wav' at thread -1
+Loading resource: res://assets/audio/wrong.wav remapped: res://assets/audio/wrong.wav
+Loading resource: res://.godot/imported/wrong.wav-6db4f6f5b1dea3769f59d520a2e65f46.sample remapped: res://.godot/imported/wrong.wav-6db4f6f5b1dea3769f59d520a2e65f46.sample
+Completed load for: 'res://assets/audio/wrong.wav' remapped 'res://assets/audio/wrong.wav' at thread -1
+Loading resource: res://assets/audio/solve.wav remapped: res://assets/audio/solve.wav
+Loading resource: res://.godot/imported/solve.wav-625e83a23f504858e62b3aa8cbe6e8f8.sample remapped: res://.godot/imported/solve.wav-625e83a23f504858e62b3aa8cbe6e8f8.sample
+Completed load for: 'res://assets/audio/solve.wav' remapped 'res://assets/audio/solve.wav' at thread -1
+Loading resource: res://assets/audio/push.wav remapped: res://assets/audio/push.wav
+Loading resource: res://.godot/imported/push.wav-a1445db2746e003408eb9f4818d4708f.sample remapped: res://.godot/imported/push.wav-a1445db2746e003408eb9f4818d4708f.sample
+Completed load for: 'res://assets/audio/push.wav' remapped 'res://assets/audio/push.wav' at thread -1
+Loading resource: res://assets/audio/reward.wav remapped: res://assets/audio/reward.wav
+Loading resource: res://.godot/imported/reward.wav-3cc43db6eddc88900bb65eddb009ce91.sample remapped: res://.godot/imported/reward.wav-3cc43db6eddc88900bb65eddb009ce91.sample
+Completed load for: 'res://assets/audio/reward.wav' remapped 'res://assets/audio/reward.wav' at thread -1
+Loading resource: res://assets/audio/portal.wav remapped: res://assets/audio/portal.wav
+Loading resource: res://.godot/imported/portal.wav-7a40435c819249b0c357deedd11069c7.sample remapped: res://.godot/imported/portal.wav-7a40435c819249b0c357deedd11069c7.sample
+Completed load for: 'res://assets/audio/portal.wav' remapped 'res://assets/audio/portal.wav' at thread -1
+Loading resource: res://assets/audio/victory.wav remapped: res://assets/audio/victory.wav
+Loading resource: res://.godot/imported/victory.wav-d893d32ad919f27e15cf04d35e288b78.sample remapped: res://.godot/imported/victory.wav-d893d32ad919f27e15cf04d35e288b78.sample
+Completed load for: 'res://assets/audio/victory.wav' remapped 'res://assets/audio/victory.wav' at thread -1
+Loading resource: res://assets/audio/defeat.wav remapped: res://assets/audio/defeat.wav
+Loading resource: res://.godot/imported/defeat.wav-2c373cdad262b5fb9203b05423989caa.sample remapped: res://.godot/imported/defeat.wav-2c373cdad262b5fb9203b05423989caa.sample
+Completed load for: 'res://assets/audio/defeat.wav' remapped 'res://assets/audio/defeat.wav' at thread -1
+Loading resource: res://assets/audio/enemy_cast.wav remapped: res://assets/audio/enemy_cast.wav
+Loading resource: res://.godot/imported/enemy_cast.wav-83552b0be8268965ebac2bd6841e9661.sample remapped: res://.godot/imported/enemy_cast.wav-83552b0be8268965ebac2bd6841e9661.sample
+Completed load for: 'res://assets/audio/enemy_cast.wav' remapped 'res://assets/audio/enemy_cast.wav' at thread -1
+Loading resource: res://assets/audio/warning.wav remapped: res://assets/audio/warning.wav
+Loading resource: res://.godot/imported/warning.wav-bbd467b4b8c964daf182674a45c0d6f0.sample remapped: res://.godot/imported/warning.wav-bbd467b4b8c964daf182674a45c0d6f0.sample
+Completed load for: 'res://assets/audio/warning.wav' remapped 'res://assets/audio/warning.wav' at thread -1
+Loading resource: res://assets/audio/menu.wav remapped: res://assets/audio/menu.wav
+Loading resource: res://.godot/imported/menu.wav-de54ed9cbf594325d64fc7b093374005.sample remapped: res://.godot/imported/menu.wav-de54ed9cbf594325d64fc7b093374005.sample
+Completed load for: 'res://assets/audio/menu.wav' remapped 'res://assets/audio/menu.wav' at thread -1
+Loading resource: res://assets/audio/dungeon.wav remapped: res://assets/audio/dungeon.wav
+Loading resource: res://.godot/imported/dungeon.wav-680b637ce8956fef5c91e02b1cf9967b.sample remapped: res://.godot/imported/dungeon.wav-680b637ce8956fef5c91e02b1cf9967b.sample
+Completed load for: 'res://assets/audio/dungeon.wav' remapped 'res://assets/audio/dungeon.wav' at thread -1
+Loading resource: res://assets/audio/boss.wav remapped: res://assets/audio/boss.wav
+Loading resource: res://.godot/imported/boss.wav-ddb6c7f6bdafc090efb2210b84ae8009.sample remapped: res://.godot/imported/boss.wav-ddb6c7f6bdafc090efb2210b84ae8009.sample
+Completed load for: 'res://assets/audio/boss.wav' remapped 'res://assets/audio/boss.wav' at thread -1
+Completed load for: 'res://data/audio/catalog.tres' remapped 'res://data/audio/catalog.tres' at thread -1
+PASS: 20 effects and 3 music tracks load
+PASS: PCM assets are non-silent and do not clip
+PASS: Music loop endpoints are continuous
+PASS: SFX voice starts
+PASS: Duplicate same-frame cues are throttled
+PASS: Unknown cue ignored safely
+PASS: Voice pool stays bounded under bursts
+PASS: Music event switches to boss
+PASS: Music is configured to loop
+PASS: Crossfade stops outgoing track
+PASS: Rapid room changes retain latest music
+PASS: Zero volume truly mutes Master
+PASS: Settings save and reload
+PASS: Gameplay SFX blocked while paused
+PASS: Menu feedback works while paused
+PASS: Sliders reflect stored settings
+PASS: Slider changes SFX through EventBus
+PASS: Resume restores music level after ducking
+AUDIO: 0 failures
+WARNING: 10 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 3 resources still in use at exit.
+   at: clear (core/io/resource.cpp:817)
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Leaked instance: AudioStreamWAV:9223372066265236968 - Reference count: 1
+Leaked instance: AudioStreamWAV:9223372068949591560 - Reference count: 1
+Leaked instance: AudioStreamWAV:9223372069117363722 - Reference count: 1
+Leaked instance: AudioStreamWAV:9223372072036599324 - Reference count: 1
+Leaked instance: AudioStreamPlaybackWAV:9223372071617168929 - Reference count: 1
+Leaked instance: AudioStreamPlaybackWAV:9223372071399065126 - Reference count: 1
+Leaked instance: AudioStreamWAV:9223372071382287911 - Reference count: 1
+Leaked instance: AudioStreamPlaybackWAV:9223372070979634735 - Reference count: 1
+Leaked instance: AudioStreamPlaybackWAV:9223372070996411952 - Reference count: 1
+Leaked instance: AudioStreamPlaybackWAV:9223372072053376562 - Reference count: 1
+Hint: Leaked instances typically happen when nodes are removed from the scene tree (with `remove_child()`) but not freed (with `free()` or `queue_free()`).
+Resource still in use: res://assets/audio/ui.wav (AudioStreamWAV)
+Resource still in use: res://assets/audio/victory.wav (AudioStreamWAV)
+Resource still in use: res://assets/audio/defeat.wav (AudioStreamWAV)
+Orphan StringName: SFX (static: 0, total: 5)
+Orphan StringName: Music (static: 0, total: 3)
+StringName: 2 unclaimed string names at exit.

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=6 format=3]
+[ext_resource type="Script" path="res://scripts/expedition/region_data.gd" id="1"]
+[ext_resource type="Resource" path="res://data/enemies/goblin.tres" id="2"]
+[ext_resource type="Resource" path="res://data/enemies/skeleton.tres" id="3"]
+[ext_resource type="Resource" path="res://data/enemies/mage.tres" id="4"]
+[ext_resource type="Resource" path="res://data/enemies/frost_queen.tres" id="5"]
+[resource]
+script = ExtResource("1")
+title = "Thành băng"
+subtitle = "Băng vĩnh cửu che giấu một lời nguyền."
+accent = Color(0.35, 0.8, 1, 1)
+floor_color = Color(0.12, 0.25, 0.34, 1)
+preview = Rect2(777, 48, 235, 178)
+enemies = [ExtResource("2"), ExtResource("3"), ExtResource("4")]
+boss = ExtResource("5")
+

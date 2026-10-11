@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/items/chest.gd" id="1_chest_script"]
+[ext_resource type="Texture2D" path="res://assets/sprites/props/chest_closed.png" id="2_chest_tex"]
+
+[sub_resource type="RectangleShape2D" id="Rect_Chest"]
+size = Vector2(16, 10)
+
+[sub_resource type="CircleShape2D" id="Circle_Interact"]
+radius = 24.0
+
+[node name="Chest" type="StaticBody2D"]
+collision_mask = 0
+script = ExtResource("1_chest_script")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_chest_tex")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("Rect_Chest")
+
+[node name="InteractionArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("Circle_Interact")
+
+[node name="PromptLabel" type="Label" parent="."]
+visible = false
+z_index = 10
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -24.0
+offset_top = -22.0
+offset_right = 24.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 0.92, 0.55, 1)
+theme_override_colors/font_outline_color = Color(0.1, 0.08, 0.15, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 8
+text = "[E] Mở rương"
+horizontal_alignment = 1

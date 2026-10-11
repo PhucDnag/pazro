@@ -1,0 +1,43 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+
+==================================================
+  BAT DAU KIEM THU TU DONG MILESTONE 4 (PixelDungeon)
+==================================================
+
+[TEST 1] Kiem tra co che Dong/Mo cua (Door Lock/Unlock)...
+  PASS: unlock() -> is_locked = false, collision.disabled = true.
+  PASS: lock() -> is_locked = true, collision.disabled = false, state_changed emitted.
+
+[TEST 2] Kiem tra Ruong bau (Chest Interaction & Reward)...
+  PASS: Ruong khoi tao o trang thai dong (is_opened = false).
+  PASS: Player den gan ruong -> Hien goi y '[E] Mo ruong'.
+  PASS: open() -> is_opened = true, phat signal opened thanh cong, an prompt.
+
+[TEST 3] Kiem tra phong chien dau khoa cua khi bat dau giao tranh...
+  PASS: Trang thai phong ban dau: UNVISITED.
+  PASS: start_combat() -> current_state = ACTIVE.
+  PASS: Tat ca cac cua ra vao da tu dong dong sap (lock) khi tran dau bat dau.
+  PASS: Wave 1 da sinh chinh xac 2 quai Goblin vao phong dau.
+
+[TEST 4] Kiem tra tieu diet quai theo wave va don sach phong (Clear Room)...
+  PASS: Da tieu diet toan bo Wave 1.
+  PASS: Wave 2 da xuat hien gom Skeletor va Mage (2 quai).
+  PASS: current_state = CLEARED, tin hieu room_cleared da duoc phat.
+  PASS: Tat ca cac cua da tu dong mo khoa (unlock) cho nguoi choi di tiep.
+  PASS: Ruong bau phan thuong da xuat hien tai RewardPoint giua phong.
+
+[TEST 5] Kiem tra Ban do thu nho Minimap va phan hoi EventBus...
+  PASS: Minimap khoi dau tai 'start_room'.
+  PASS: EventBus room_entered -> Minimap cap nhat sang 'combat_arena_1' trang thai 'active' (Do canh bao).
+  PASS: EventBus room_cleared -> Minimap cap nhat sang 'cleared' (Xanh Pazro).
+
+[TEST 6] Kiem tra tich hop toan dien Dungeon Scene Main...
+[Main] Đã khởi tạo màn chơi PixelDungeon thành công!
+  PASS: Dungeon chua CombatRoom hop le tai toa do: (360.0, 0.0)
+  PASS: HUD tich hop day du Minimap tai vi tri goc phai man hinh.
+==================================================
+  KET QUA: TAT CA TEST CASES CUA MILESTONE 4 PASSED! (100%)
+==================================================
+
+[Main] Đã khởi tạo màn chơi PixelDungeon thành công!

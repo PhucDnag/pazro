@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/combat/enemy_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://data/mage_texture.tres" id="2_tex"]
+[ext_resource type="PackedScene" path="res://scenes/projectiles/magic_bullet.tscn" id="3_bullet"]
+
+[resource]
+script = ExtResource("1_script")
+id = "mage"
+enemy_name = "Mage"
+sprite_texture = ExtResource("2_tex")
+max_health = 40
+speed = 60.0
+contact_damage = 6
+knockback_resistance = 0.1
+detection_range = 300.0
+is_ranged = true
+attack_range = 140.0
+attack_cooldown = 1.6
+ranged_projectile_scene = ExtResource("3_bullet")
+ranged_projectile_speed = 190.0
+ranged_projectile_damage = 10
+preferred_distance = 120.0
+score_reward = 100
+
+visual_scale = 0.06
+

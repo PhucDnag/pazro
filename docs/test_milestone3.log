@@ -1,0 +1,34 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+
+==================================================
+  BAT DAU KIEM THU TU DONG MILESTONE 3 (PixelDungeon)
+==================================================
+
+[TEST 1] Kiem tra cac Resource EnemyData (.tres)...
+  PASS: Resource hop le: Goblin (HP: 30, Speed: 100.0, Damage: 8, Ranged: false).
+  PASS: Resource hop le: Skeletor (HP: 55, Speed: 75.0, Damage: 14, Ranged: false).
+  PASS: Resource hop le: Mage (HP: 40, Speed: 60.0, Damage: 6, Ranged: true).
+
+[TEST 2] Kiem tra HealthComponent & HurtboxComponent...
+  PASS: HealthComponent: 50 HP - 20 = 30 HP, phat tin hieu damage_received thanh cong.
+  PASS: HealthComponent: 30 HP + 10 = 40 HP.
+
+[TEST 3] Kiem tra Enemy nhan sat thuong va giat lui (Knockback)...
+  PASS: Enemy Goblin nhan 12 sat thuong -> Con lai 18 HP.
+  PASS: Knockback velocity duoc ap dung hop le: (180.0, 0.0)
+
+[TEST 4] Kiem tra dan Player ban trung Hurtbox cua Enemy...
+  PASS: Dan ban trung Hurtbox -> Enemy bi tru dung 15 HP.
+  PASS: Dan tu dong huy hop le (Queue Free) sau khi ban trung muc tieu.
+
+[TEST 5] Kiem tra vong doi tu vong cua Enemy khi het mau...
+  PASS: Enemy is_dead = true.
+  PASS: defeated signal phat thanh cong voi diem thuong: 50 diem.
+
+[TEST 6] Kiem tra so sat thuong noi (Floating Damage Text)...
+  PASS: FloatingText khoi tao dung chuoi sat thuong: '24'.
+==================================================
+  KET QUA: TAT CA TEST CASES CUA MILESTONE 3 PASSED! (100%)
+==================================================
+

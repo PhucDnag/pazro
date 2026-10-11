@@ -1,0 +1,24 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: Title screen built
+PASS: Three playable regions
+PASS: Hầm ngục tối resources
+PASS: Thành băng resources
+PASS: Núi lửa resources
+PASS: Player and health initialized
+PASS: Player fires a real projectile
+PASS: Projectile scene has working script
+PASS: Dash activates
+PASS: Dash grants invulnerability
+PASS: Dash cooldown enforced
+PASS: Potion consumes one charge and heals
+PASS: Skill rejects insufficient mana
+PASS: Skill consumes mana
+PASS: Skill cooldown enforced
+PASS: Pause freezes gameplay
+PASS: Resume unfreezes gameplay
+PASS: Dungeon run replaces single arena
+PASS: Menu cleans up previous run
+PASS: Restart resets inventory and health
+PASS: Death shows game over
+EXPEDITION TESTS: 0 failures

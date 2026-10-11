@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="RegionData" load_steps=6 format=3]
+[ext_resource type="Script" path="res://scripts/expedition/region_data.gd" id="1"]
+[ext_resource type="Resource" path="res://data/enemies/goblin.tres" id="2"]
+[ext_resource type="Resource" path="res://data/enemies/skeleton.tres" id="3"]
+[ext_resource type="Resource" path="res://data/enemies/mage.tres" id="4"]
+[ext_resource type="Resource" path="res://data/enemies/crypt_king.tres" id="5"]
+[resource]
+script = ExtResource("1")
+title = "Hầm ngục tối"
+subtitle = "Đá cổ, linh hồn và vị vua bị lãng quên."
+accent = Color(0.9, 0.65, 0.36, 1)
+floor_color = Color(0.16, 0.17, 0.23, 1)
+preview = Rect2(239, 48, 242, 178)
+enemies = [ExtResource("2"), ExtResource("3"), ExtResource("4")]
+boss = ExtResource("5")
+

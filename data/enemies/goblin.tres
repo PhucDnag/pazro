@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/combat/enemy_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://data/goblin_texture.tres" id="2_tex"]
+
+[resource]
+script = ExtResource("1_script")
+id = "goblin"
+enemy_name = "Goblin"
+sprite_texture = ExtResource("2_tex")
+max_health = 30
+speed = 100.0
+contact_damage = 8
+knockback_resistance = 0.0
+detection_range = 260.0
+is_ranged = false
+attack_range = 24.0
+attack_cooldown = 0.8
+score_reward = 50
+
+visual_scale = 0.06
+
